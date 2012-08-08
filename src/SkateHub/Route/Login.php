@@ -1,5 +1,5 @@
 <?php
-namespace Application\Route;
+namespace SkateHub\Route;
 
 use \InvalidArgumentException as Argument;
 use \RuntimeException as Runtime;

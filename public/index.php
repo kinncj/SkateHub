@@ -10,7 +10,9 @@
 require 'bootstrap.php';
 
 $auth                = new SkateHub\Route\Routine\Auth;
-$authenticated       = function() use($auth) { return $auth(); };
+$authenticated       = function() use($auth) { 
+    return $auth(); 
+};
 $r                   = new Respect\Rest\Router();
 $r->isAutoDispatched = false;
 // Routes ----------------------------------------------------------------------
@@ -25,7 +27,7 @@ $r->always('Through', function() {
         if (!is_array($data)) {
             return $data;
         }
-        $data['version'] = RANKING_VERSION;
+        $data['version'] = APPLICATION_VERSION;
         if (isset($_SESSION['user'])) {
             $data['user'] = $_SESSION['user'];
         }
@@ -34,8 +36,8 @@ $r->always('Through', function() {
 });
 // Content negotiation setup for ALL routes
 $r->always('Accept', array(
-    'text/html'        => new Ranking\Route\Routine\Twig,
-    'text/plain'       => $json = new Ranking\Route\Routine\Json,
+    'text/html'        => new SkateHub\Route\Routine\Twig,
+    'text/plain'       => $json = new SkateHub\Route\Routine\Json,
     'application/json' => $json,
     'text/json'        => $json
 ));

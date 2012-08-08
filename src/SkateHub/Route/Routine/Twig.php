@@ -1,5 +1,5 @@
 <?php
-namespace Ranking\Route\Routine;
+namespace SkateHub\Route\Routine;
 
 use Twig_Environment;
 use Respect\Config\Container;
@@ -23,7 +23,7 @@ class Twig
         if (!is_null($twig))
             return $this->twig = $twig;
         
-        $container  = new Container(RANKING_ROOT.DS.'conf'.DS.'Twig.ini');
+        $container  = new Container(APPLICATION_ROOT.DS.'conf'.DS.'Twig.ini');
         $this->twig = $container->twig;
     }
 

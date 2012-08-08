@@ -1,5 +1,5 @@
 <?php
-namespace Ranking\Route\Routine;
+namespace SkateHub\Route\Routine;
 
 use \JSON_FORCE_OBJECT;
 

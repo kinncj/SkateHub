@@ -1,5 +1,5 @@
 <?php
-namespace Ranking\Route\Routine;
+namespace SkateHub\Route\Routine;
 
 use \PHP_SESSION_ACTIVE;
 

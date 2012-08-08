@@ -1,5 +1,5 @@
 <?php
-namespace Application\Route;
+namespace SkateHub\Route;
 
 use \InvalidArgumentException as Argument;
 use \RuntimeException as Runtime;
@@ -17,7 +17,7 @@ class Home implements Routable
 
     public function get()
     {
-        
+        return array('_view'=>'index.html');
     }
 
     public function post()

@@ -22,7 +22,7 @@ require $l;
 unset($l);
 
 // Configuration ---------------------------------------------------------------
-$env = new APPLICATION\Enviroment();
+$env = new SkateHub\Enviroment();
 define('APPLICATION_ENVIROMENT', $env->getName());
 define('APPLICATION_SALT', $env->getSalt());
 //                                                                      Database

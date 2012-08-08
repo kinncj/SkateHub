@@ -1,5 +1,5 @@
 <?php
-namespace Ranking\Route;
+namespace SkateHub\Route;
 
 use Respect\Rest\Routable;
 

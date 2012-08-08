@@ -1,5 +1,5 @@
 <?php
-namespace APPLICATION;
+namespace SkateHub;
 
 use StdClass;
 use InvalidArgumentException as Argument;
