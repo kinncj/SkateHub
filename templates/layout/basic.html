@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+{% block head %}
+        <title>SkateHub: {% block title %}{% endblock %}</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Kinn Coelho Julião">
+        <meta name="keywords" content="SkateHub">
+{% endblock %}
+    </head>
+    <body>
+{% include 'include/navigation.html' %}
+
+{% block content %}{% endblock %}
+
+{% include 'include/footer.html' %}
+    </body>
+</html>
