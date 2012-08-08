@@ -59,6 +59,7 @@ easy, fast and scalable way of development, they are:
 * [PHPUnit](http://phpunit.de): Tool for unit testing the code (used by developers only)
 * [Composer](http://getcomposer.org): Dependency management, maintains all the above components installed and up-to-date
 
+
 The directory structure is very widely-used:
 
 * **bin**: commands availiable to be executed (Ex: Composer, Doctrine)
