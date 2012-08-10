@@ -17,13 +17,13 @@ doctrine: permission
 	bin/doctrine orm:schema-tool:update --force
 
 install: permission composer doctrine
-	@echo "Fixed permissions, got dependencies and created/updated database"
+	@echo "Fixed permissions, installed dependencies and created/updated database"
 
 test:
 	@cd tests; phpunit .
 
 testdox:
-	@cd tests; phpunit --testdox .	
+	@cd tests; phpunit --testdox .
 
 coverage:
 	@cd tests; phpunit --coverage-html=reports --coverage-text .
